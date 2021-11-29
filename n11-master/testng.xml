@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Main Test Suite" parallel="tests" thread-count="2">
+    <test name="Grid Firefox Test" thread-count="5">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="tests.TC01_Magazalar">
+            </class>
+        </classes>
+    </test>
+    <test name="Grid Chrome Test" thread-count="5">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.TC02_Products">
+            </class>
+        </classes>
+    </test>
+</suite>
